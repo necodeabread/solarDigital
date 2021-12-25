@@ -1,0 +1,100 @@
+.intro {
+    background: url('../img/intro-bg.png') center center / cover no-repeat;
+    height: 900px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @include mds {
+        height: 700px;
+    }
+    @include tablet {
+        height: auto;
+    }
+    &-bglayer {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: 
+            url("../img/intro-bg-add-layer.png") no-repeat bottom right, 
+            url("../img/intro-bg-deep-layer.png") no-repeat bottom right,
+            url("../img/intro-bg-lowest-layer.png") no-repeat bottom right;
+        transform: scaleX(2);
+        @include xlg {
+            transform: scaleX(1);
+            top: 130px;
+        }
+        @include lg {
+            top: 0;
+        }
+    }
+    &-wrapper {
+        position: relative;
+        margin: 0 auto;
+        z-index: 4;
+        margin-top: 172px;
+        @include mds {
+            margin-top: 72px;
+        }
+        @include tablet {
+            margin-top: 132px;
+            padding-bottom: 120px;
+        }
+        @include sm {
+            width: 90%;
+        }
+    }
+    &__header, &__subheader {
+        margin: 0 auto;
+        margin-bottom: 19px;
+        text-align: center;
+        font-size: 70px;
+        color: white;
+    }
+    &__header {
+        line-height: 1;
+        letter-spacing: 0.16px;
+        @include lg {
+            font-size: 64px;
+        }
+        @include md {
+            font-size: 52px;
+        }
+        @include mds {
+            font-size: 38px;
+        }
+        @include sm {
+            font-size: 32px;
+        }
+    }
+    &__subheader {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 0.36px;
+        height: 28px;
+        @include sm {
+            font-size: 20px;
+        }
+    }
+    &__btn {
+        width: 240px;
+        height: 53px;
+        border-radius: 4px;
+        border: none;
+        margin-top: 33px;
+        box-shadow: 0 8px 14px 0 rgba(0, 107, 206, 0.3);
+        background: linear-gradient(180deg, rgba(0,249,255,1) 0%, rgba(0,208,241,1) 100%);
+        color: white;
+        font-size: 18px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: center;
+        transition: 1s all;
+        &:hover {
+            cursor: pointer;
+            background-color: #2e73fe;
+            transform: scale(1.1) translateX(-50%);
+        }
+    }
+}

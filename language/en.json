@@ -1,0 +1,49 @@
+
+{
+    "forTraders": "For Traders",
+    "about": "About",
+    "logIn": "Log in",
+    "signUp": "Sign up",
+
+    "introHeader": "A simple tool for online trading",
+    "introSubheader": "Your first income in a second",
+    "introButton": "Start strading",
+
+    "horse": "Polish up your winning strategy on a demo account",
+    "rocket": "Determine where the asset price will go: up or down",
+    "arrow": "Trade with a minimum of investment and get up to 95% of the benefits",
+    "wallet": "$10 Minimal Deposit Personal Manager Free learning 24/7 Support",
+
+    "depositTabDep": "Minimal deposit 10$",
+    "depositTabMan": "Personal manager",
+    "depositTabLer": "Free learning",
+    "depositTabSup": "Support",
+
+    "depositDepHeader": "Minimal deposit 10$",
+    "depositDepSubHeader": "A live account allows you to earn real money. You should sign up and charge the trading account to get the real account. The minimal deposit is $10. It' s a real chance to increase your income!",
+
+    "assetsHeader": "More than 50 checked assets",
+
+    "mobileHeader": "Mobile apps",
+    "mobileText": "Several charts trading, technical analysis, quotations history and many else. Everything you need on a platform is available on any device by your choice",
+
+    "conclusionHeader": "Binotrade.com - binary option with a personal assistant",
+    "conclusionParOne": "Binotrade is a trading platform, a convenient tool which does not only offer an availability to earn with binary options but provides professional service. Right after a singup on Binotrade.com, every customer receives a personal advisor",
+    "conclusionParTwo": "In need of an advice in assets trading or unable to set suitable trading strategy? Turn to your personal assistant who will help you with problem solution. You won't need VIP status in order to use qualified customer service!",
+
+    "footerLegalHeader": "Legal information",
+    "footerLegalTNC": "Terms&Conditions",
+    "footerLegalMoney": "Anti-money laundering policy",
+    "footerLegalPrivacy": "Privacy Policy",
+    "footerLegalPayment": "Payment Policy",
+
+    "footerTradersHeader": "For traders",
+    "footerTradersAssets": "Assets",
+    "footerTradersQuotes": "Quotes archive",
+    "footerTradersFAQ": "FAQ",
+    "footerTradersLearning": "Learning",
+
+    "footerAboutHeader": "About company",
+    "footerAboutNews": "News",
+    "footerAboutContacts": "Contacts"
+}

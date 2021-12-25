@@ -1,0 +1,119 @@
+.content {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    font-size: $baze-font-size;
+    color: #1e2945;
+    @include tablet {
+        justify-content: center;
+        margin-left: 30px;
+    }
+    &-image {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 21px;
+        @include mds {
+            padding-left: 2px;
+        }
+        @include tablet {
+            width: 240px;
+            height: 240px;
+            border-radius: 16px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        @include sm {
+            width: 180px;
+            height: 180px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+    &-text {
+       display: table;
+       height: 36px;
+       min-width: 200px;
+       max-width: 273px;
+       white-space: nowrap;
+       @include md {
+           white-space: normal;
+       }
+       @include mds {
+           min-width: 120px;
+       }
+       @include tablet {
+           display: none;
+       }
+    }
+}
+
+.horse { 
+    background-image: linear-gradient(315deg, #ff7676, #f54ea2); 
+    margin-left: 34px;
+    @include md {
+        margin-left: -34px;
+    }
+    @include tablet {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.rocket { 
+    background-image: linear-gradient(311deg, #fce38a 10%, #f38181 95%); 
+    margin-left: -34px; 
+    @include md {
+        margin-left: -44px;
+        padding-right: 2px;
+    }
+    @include mds {
+        padding-left: 4px;
+    }
+    @include tablet {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.arrow { 
+    background-image: linear-gradient(315deg, rgba(23, 234, 217, 0.1), 
+    #22d9db, #6078ea 66%); 
+    margin-left: 34px; 
+    padding-right: 14px;
+    img {
+        padding-left: 10px;
+    }
+    @include md {
+        margin-left: -34px;
+        padding-right: 10px;
+    }
+    @include tablet {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.wallet { 
+    background-image: linear-gradient(135deg, #43e695, #3bb2b8); 
+    margin-left: -34px; 
+    @include md {
+        margin-left: -44px;
+        padding-right: 5px;
+    }
+    @include mds {
+        padding-left: 4px;
+    }
+    @include tablet {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

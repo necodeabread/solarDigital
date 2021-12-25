@@ -1,0 +1,161 @@
+.deposits {
+    position: relative;
+    z-index: 2;
+    background-color: $main-bg-color;
+    padding-bottom: 200px;
+    @include mds {
+        overflow: hidden;
+        padding-top: 126px;
+    }
+    @include tablet {
+        position: static;
+        overflow: hidden;
+    }
+    @include sm {
+        padding-top: 36px;
+    }
+}
+
+.cloud {
+    position: absolute;
+    @include sm {
+        display: none;
+    }
+    &_sym {
+        left: -41%;
+        top: 192px;
+        z-index: -1;
+        @include xlg {
+            left: -21%;
+        }
+        @include lg {
+            left: -35%;
+        }
+        @include md {
+            left: -25%;
+            z-index: -1;
+        }
+        @include mds {
+            left: -42%;
+        }
+    }
+    &_medas {
+        top: 287px;
+        right: -94px;
+        z-index: -1;
+        img {
+            width: 168px;
+            height: 78px;
+        }
+        @include xlg {
+            right: 14px;
+        }
+        @include lg {
+            left: 933px;
+        }
+        @include md {
+            left: 823px;
+        }
+        @include mds {
+            top: 500px;
+            right: 50px;
+        }
+    }
+    &_as {
+        top: 452px;
+        left: 68px;
+        img {
+            width: 100px;
+            height: 53px;
+        }
+        @include md {
+            left: 102px;
+        }
+        @include mds {
+            top: 640px;
+            left: 68px;
+        }
+    }
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    @include sm {
+        display: none;
+    }
+    &_big {
+        width: 90px;
+        height: 90px;
+        background-image: linear-gradient(166deg, #1acbfd 22%, #345aff 93%);
+        top: 0px;
+        left: -298px;
+        font-size: 50px;
+        line-height: 90px;
+        font-weight: 900;
+        transform: rotate(-10deg);
+        @include xlg {
+            left: -148px;
+        }
+        @include lg {
+            left: -219px;
+        }
+        @include md {
+            left: -80px;
+        }
+    }
+    &_sm {
+        width: 33px;
+        height: 33px;
+        background-image: linear-gradient(315deg, #ff7676, #f54ea2);
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 0.56px;
+        transform: rotate(-10deg);
+        line-height: 33px;
+        top: 465px;
+        left: 383px;
+        @include md {
+            left: 421px;
+        }
+        @include mds {
+            left: 620px;
+        }
+    }
+    &_dollar {
+        &_big {
+            width: 41px;
+            height: 41px;
+            background-image: linear-gradient(135deg, #43e695, #3bb2b8);
+            top: 456px;
+            left: -126px;
+            img {
+                margin-top: 4px;
+                margin-left: 4px;
+            }
+            @include xlg {
+                left: -46px;
+            }
+            @include md {
+                left: 0px;
+            }
+        }
+        &_sm {
+            width: 26px;
+            height: 26px;
+            background-image: linear-gradient(311deg, #fce38a 10%, #f38181 95%);
+            top: 0;
+            left: 268px;
+            img  {
+                width: 18px;
+                height: 22px;
+                margin-top: 3px;
+            }
+            @include mds {
+                left: 640px;
+            }
+        }
+    }
+}

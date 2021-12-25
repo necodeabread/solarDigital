@@ -1,0 +1,56 @@
+.info {
+    min-height: 539px;
+    background-color: $main-bg-color;
+    @include tablet {
+        min-height: none;
+    }
+    &__wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 222px;
+        @include mds {
+            padding-top: 172px;
+        }
+        @include tablet {
+            padding-top: 118px;
+        }
+        @include sm {
+            padding-top: 60px;
+            height: 640px;
+        }
+    }
+    &__header {
+        font-size: 36px;
+        line-height: 1.08;
+        letter-spacing: 0.09px;
+        text-align: left;
+        color: #1e2945;
+    }
+    &__text {
+        height: 156px;
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        @include tablet {
+            display: block;
+        }
+    }
+    &__paragraph {
+        font-size: 18px;
+        line-height: 1.44;
+        text-align: left;
+        color: #1e2945;
+        max-width: 554px;
+        height: 156px;
+        margin-right: 65px;
+        text-align: justify;
+        width: 100%;
+        @include mds {
+            font-size: 16px;
+        }
+        &_smaller {
+            max-width: 498px;
+            padding-top: 100px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+$baze-font-size: 15px;
+$main-bg-color: #fbfcfd;
+
+body {
+    font-family: Roboto, serif;
+    font-size: $baze-font-size;
+    margin: 0;
+    padding: 0.05px;
+}
+
+@mixin xlg {
+    @media( max-width: 1600px ) {
+        @content;
+    }
+}
+@mixin lg {
+    @media( max-width: 1440px ) {
+        @content;
+    }
+}
+@mixin md {
+    @media( max-width: 1200px ) {
+        @content;
+    }
+}
+@mixin mds {
+    @media( max-width: 992px ) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media( max-width: 768px ) {
+        @content;
+    }
+}
+@mixin sm {
+    @media( max-width: 576px ) {
+        @content;
+    }
+}
+
+.container {
+    width: 1340px;
+    margin: 0 auto;
+    @include xlg {
+        width: 1040px;
+    }
+    @include lg {
+        width: 1040px;
+    }
+    @include md {
+        width: 960px;
+    }
+    @include mds {
+        width: 720px;
+    }
+    @include tablet {
+        width: 576px;
+    }
+    @include sm {
+        width: 320px;
+    }
+}
+
+@import "block/*.scss";

@@ -1,0 +1,14 @@
+.links {
+    display: flex;
+    align-items: center;
+    &-item {
+        color: white;
+        font-size: $baze-font-size;
+        font-weight: 500;
+        text-decoration: none;
+        padding-right: 28px;
+        @include mds {
+            font-size: 12px;
+        }
+    }
+}

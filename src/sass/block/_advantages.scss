@@ -1,0 +1,79 @@
+.advantages {
+    position: relative;
+    background-color: $main-bg-color;
+    padding-bottom: 60px;
+    @include tablet {
+        padding-top: 60px;
+        height: auto;
+        position: static;
+    }
+    &__list {
+        max-width: 1040px;
+        width: 1040px;
+        height: 366px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.03);
+        position: relative;
+        top: -183px;
+        z-index: 5;
+        @include md {
+            width: 800px;
+        }
+        @include mds {
+            width: 720px;
+        }
+        @include tablet {
+            width: 400px;
+            margin: 0 auto;
+            position: static;
+            height: auto;
+            margin-bottom: 60px;
+            background-color: $main-bg-color;
+        }
+        @include sm {
+            width: 300px;
+        }
+        &__item {
+            width: calc(50% - 1px);
+            height: calc(50% - 1px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include tablet {
+                width: 400px;
+                height: 400px;
+                background-color: white;
+                border-radius: 16px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 16px $main-bg-color;
+            }
+            @include sm {
+                width: 300px;
+                height: 300px;
+            }
+            &:nth-of-type(1) {
+                border-right: 1px solid #f7f7f7;
+                border-bottom: 1px solid #f7f7f7;
+                @include tablet {
+                    border: none;
+                }
+            }
+            &:nth-of-type(2) {
+                border-bottom: 1px solid #f7f7f7;
+                @include tablet {
+                    border: none;
+                }
+            }
+            &:nth-of-type(3) {
+                border-right: 1px solid #f7f7f7;
+                @include tablet {
+                    border: none;
+                }
+            }
+        }
+    }
+}

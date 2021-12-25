@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sass/main.min.css">
+
+</head>
+<body>
+    <section class="intro">
+        <div class="intro-bglayer"></div>
+        @@include("templates/nav.html")
+        
+        <div class="intro-wrapper">
+            <div class="intro__header">Простой инструмент  <br>
+                для онлайн торговли</div>
+            <div class="intro__subheader">Первая прибыль через 1 минуту</div>
+            <button class="intro__btn">Начать торговать</button>
+        </div>
+    </section>
+
+    @@include("templates/advantages.html")
+
+    @@include("templates/deposits.html")
+
+    @@include("templates/assets.html")
+
+    @@include("templates/apps.html")
+
+    @@include("templates/info.html")
+
+    @@include("templates/footer.html")
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

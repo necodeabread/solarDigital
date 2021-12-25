@@ -1,0 +1,189 @@
+footer {
+    height: 333px;
+    background-color: $main-bg-color;
+    position: relative;
+    @include tablet {
+        padding-top: 100px;
+        height: 400px;
+    }
+    @include sm {
+        padding-top: 0;
+        background-color: rgba(243,248,255, .7);
+    }
+}
+
+.footer {
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    height: 333px;
+    left: 50%;
+    transform: translate(-50%);
+    &__links {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 155px;
+        @include xlg {
+            justify-content: space-around;
+        }
+        @include lg {
+            justify-content: center;
+        }
+        @include mds {
+            margin-right: 100px;
+            margin-top: 115px;
+            margin-left: 40px;
+            width: 80%;
+        }
+        @include tablet {
+            margin-left: 60px;
+        }
+        @include sm {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+    &__bg {
+        position: absolute;
+        left: 4%;
+        @include xlg {
+            left: 2.5%;
+        }
+        @include lg {
+            left: -103px;
+            transform: scaleX(.8);
+        }
+        @include md {
+            left: -18%;
+            transform: scaleX(.6);
+        }
+        @include mds {
+            left: -44%;
+            transform: scale(.5, .8);
+        }
+        @include tablet {
+            left: -77%;
+            transform: scale(.4, 1.2);
+        }
+        @include sm {
+            display: none;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-right: 10px;
+        @include xlg {
+            margin-right: 0;
+        }
+        @include lg {
+            margin-right: 10px;
+        }
+        a {
+            text-decoration: none;
+            color:#1e2945;
+        }
+        &-header {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        &-item {
+            line-height: 1.73;
+            font-size: $baze-font-size;
+            @include mds {
+                display: none;
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 515px;
+        margin-top: 16px;
+        @include lg {
+            width: 315px;
+        }
+        @include md {
+            width: 150px;
+        }
+        @include sm {
+            flex-direction: column;
+        }
+    }
+    &__stores {
+        display: flex;
+        @include lg {
+            display: block;
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            top: 120px;
+            right: 200px;
+        }
+        @include sm {
+            position: static;
+        }
+    }
+    &__appbtn {
+        padding-right: 10px;
+    }
+    &__networks {
+        display: flex;
+        @include md {
+            flex-direction: column;
+        }
+        @include tablet {
+            position: relative;
+            top: 120px;
+            right: 680px;
+            flex-direction: row;
+        }
+        @include sm {
+            position: static;
+            margin-top: 10px;
+            margin-left: 30px;   
+        }
+    }
+    &__networkbtn {
+        width: 38px;
+        height: 38px;
+        border-radius: 6px;
+        background-image: linear-gradient(316deg, #1acbfd 4%, #345aff 79%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include md {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+.watermark {
+    position: absolute;
+    z-index: 1;
+    right: 288px;
+    bottom: 56px;
+    @include xlg {
+        right: 114px;
+    }
+    @include md {
+        bottom: 24px;
+        right: 160px;
+    }
+    @include mds {
+        bottom: 44px;
+    }
+    @include tablet {
+        right: 60px;
+    }
+    @include sm {
+        right: 112px;
+    }
+}

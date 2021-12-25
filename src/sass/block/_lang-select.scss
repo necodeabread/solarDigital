@@ -1,0 +1,36 @@
+.lang-select {
+    font-family: Roboto, sans-serif;
+    font-size: $baze-font-size;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+    &-item {
+        margin-top: 4px;
+        text-decoration: none;
+        color: white;
+        &_en {
+            display: none;
+        }
+    }
+    &-arrow {
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        margin-top: 6px;
+        margin-left: 2px;
+        .rect {
+            width: 7px;
+            height: 7px;
+            background-color: white;
+            border-radius: 2px;
+            transform: rotate(45deg);
+            position: relative;
+            top: -3px;
+        }
+    }
+}

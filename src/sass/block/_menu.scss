@@ -1,0 +1,127 @@
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 31px;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 1;
+    width: 75%;
+    @include xlg {
+        width: 94%;
+    }
+    @include mds {
+        width: 80%;
+    }
+    @include tablet { 
+        display: none;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {  
+        display: flex;
+        font-weight: 700;
+        color: white;
+        font-size: 18px;
+        font-family: Roboto, sans-serif;
+        img {
+            margin-right: 14px;
+        }
+    }
+    &__divider {
+        width: 1px;
+        height: 20px;
+        background-color: white;
+        margin-right: 12px;
+        &_big {
+            height: 30px;
+        }
+    }
+    &__reg {
+        display: flex;
+        align-items: center;
+        &-login {
+            color: white;
+            border: none;
+            background-color: transparent;
+            padding-left: 29px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &-signup {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            height: 30px;
+            width: 165px;
+            margin-left: 19px;
+            transition: 1s all;
+            &:hover {
+                cursor: pointer;
+                background-color: #00d0f1;
+                border: none;
+            }
+        }
+    }
+}
+
+.mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: rgba(0,208,241,1);
+    width: 100%;
+    box-shadow: 0 2px 4px $main-bg-color;
+    ul {
+        list-style-type: none;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        width: 80%;
+    }
+    &__header {
+        width: 150px;
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__hamburger {
+        width: 40px;
+        height: 20px;
+        &-stick {
+            width: 30px;
+            height: 4px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+            background-color: white;
+        }
+    }
+    &__menu {
+        height: 0px;
+        padding-left: 20px;
+        a {
+            text-decoration: none;
+            padding-left: 20px;
+            font-size: 18px;
+            color: white;
+        }
+        transition: 1s all;
+    }
+    &__list {
+        display: none;
+    }
+    @include tablet {
+        display: block;
+    }
+}
